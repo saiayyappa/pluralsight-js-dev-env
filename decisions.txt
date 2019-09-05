@@ -19,7 +19,7 @@ For Deployment : Heroku
 
 Module 1:
 Editor: What to look for
--Strong ES2015+ Support
+- Strong ES2015+ Support
 - AutoCompletion
 - Parse ES6 imports
 - Report unused imports
@@ -29,3 +29,9 @@ Editor: What to look for
 - Recommended -- Atom, WebStorm, Brackets, VSCode
 
 Module 2:
+Package Managers
+- bower(irrelavant), npm(most recommended), jspm(also a bundler), jam, volo
+- https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844
+- package security -- retire.js, Node Security Platform
+- npm now has security scanning built-in
+
