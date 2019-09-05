@@ -16,7 +16,7 @@ Automated Deployment
 For Integration: Git
 For Deployment : Heroku
 
-Editor: What to look for
+## Editor: What to look for
 - Strong ES2015+ Support
 - AutoCompletion
 - Parse ES6 imports
@@ -26,13 +26,13 @@ Editor: What to look for
 - Built-in terminal
 - Recommended -- Atom, WebStorm, Brackets, VSCode
 
-Package Managers
+## Package Managers
 - bower(irrelavant), npm(most recommended), jspm(also a bundler), jam, volo
 - https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844
 - package security -- retire.js, Node Security Platform
 - npm now has security scanning built-in
 
-Development Web Servers
+## Development Web Servers
 - http-server, live-server
     light weight, easily configurable, limited capabilities
 - express
@@ -55,7 +55,7 @@ Development Web Servers
 - browsersync & localtunnel are good combination since we can test in various
     devies simultaneously
 
-Automation
+## Automation
 - grunt
     first js task-runner, config over code(grunt json file)
     file-oriented(writes intermediary files between steps)
@@ -75,4 +75,5 @@ Automation
     layer of abstraction)
     simple debugging, better docs
     https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/#.atd15pnxx
-
+- nsp is build into node by default so need of security-check script
+## 
