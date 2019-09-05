@@ -1,0 +1,17 @@
+For a JS Starter kit following decisions have to be considered
+
+Editors and Configurations
+Package Management
+Development Webserver
+Automation
+Transpiling
+Bundling
+Linting
+HTTP
+Testing and CI
+Project Structure
+Production Build
+Automated Deployment
+
+For Integration: Git
+For Deployment : Heroku
