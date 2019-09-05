@@ -76,4 +76,15 @@ For Deployment : Heroku
     simple debugging, better docs
     https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/#.atd15pnxx
 - nsp is build into node by default so need of security-check script
-## 
+
+## Transpiling
+- Babel: modern, allows to use experimental feature in standards-based way
+    transpiles to ES5, standardized JS, leverage full JS ecosystem
+- TypeScript: superset of JS, enhanced autocompletion, safer refactoring
+    type safety, can aid maintenance on large code bases by clarifying
+    developer intent, additional non-standard features
+- TS cannot be used with react which uses JSX which is not supported by 
+    TS but babel can be used because code is following JS standards but
+    TS adds enhancement to existing JS such as interfaces, thus new syntaxes
+    of other template engine such JSX cannot be used.(but support was added later)
+- no type defs, annotations required, ES6 imports are statically analyzable in Babel
