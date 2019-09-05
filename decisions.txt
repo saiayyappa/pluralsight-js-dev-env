@@ -15,3 +15,17 @@ Automated Deployment
 
 For Integration: Git
 For Deployment : Heroku
+
+
+Module 1:
+Editor: What to look for
+-Strong ES2015+ Support
+- AutoCompletion
+- Parse ES6 imports
+- Report unused imports
+- Automated refactoring
+- Framework Intelligence
+- Built-in terminal
+- Recommended -- Atom, WebStorm, Brackets, VSCode
+
+Module 2:
