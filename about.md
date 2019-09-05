@@ -1,4 +1,4 @@
-For a JS Starter kit following decisions have to be considered
+# For a JS Starter kit following decisions have to be considered
 
 Editors and Configurations
 Package Management
@@ -75,5 +75,4 @@ Automation
     layer of abstraction)
     simple debugging, better docs
     https://www.freecodecamp.org/news/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8/#.atd15pnxx
-
 
