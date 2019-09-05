@@ -17,8 +17,7 @@ For Integration: Git
 For Deployment : Heroku
 
 
-Module 1:
-Editor: What to look for
+Module 1: Editor: What to look for
 - Strong ES2015+ Support
 - AutoCompletion
 - Parse ES6 imports
@@ -28,10 +27,28 @@ Editor: What to look for
 - Built-in terminal
 - Recommended -- Atom, WebStorm, Brackets, VSCode
 
-Module 2:
-Package Managers
+Module 2: Package Managers
 - bower(irrelavant), npm(most recommended), jspm(also a bundler), jam, volo
 - https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844
 - package security -- retire.js, Node Security Platform
 - npm now has security scanning built-in
 
+Module 3: Development Web Servers
+- http-server, live-server
+    light weight, easily configurable, limited capabilities
+- express
+    comprehensive, highly configurable, production grade, can run it
+    everywhere
+    alternatives: koa, hapi
+- budo
+    integrates with browserify, hot reloading
+- webpack
+    fast, serves directly from memory
+    avoids pulling another dependency
+    it doesn't require generating physical files
+- browsersync
+    dedivated IP for sharing work on LAN
+    all interactions remain same
+    great for cross-device testing
+    integrates with browserify, webpack, gulp
+- all the ones mentioned above(except express) are only used for development
