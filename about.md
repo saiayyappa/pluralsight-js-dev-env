@@ -1,11 +1,11 @@
 # For a JS Starter kit following decisions have to be considered
 
-Editors and Configurations
-Package Management
-Development Webserver
-Automation
-Transpiling
-Bundling
+Editors and Configurations : VSCode
+Package Management : npm
+Development Webserver : express
+Automation : npm scripts
+Transpiling : babel
+Bundling : webpack
 Linting
 HTTP
 Testing and CI
@@ -88,3 +88,14 @@ For Deployment : Heroku
     TS adds enhancement to existing JS such as interfaces, thus new syntaxes
     of other template engine such JSX cannot be used.(but support was added later)
 - no type defs, annotations required, ES6 imports are statically analyzable in Babel
+
+## Bundling
+- CommonJS doesn't work in web browsers. So all the require/import 
+    statement do not work, hence we need to bundle all the dependencies.
+- We need to bundle npm packages in a way that browser can consume.
+- To package any JS into a single file or strategically into separate
+    file, for different portions of the app.
+- improve node performance
+- types of modules: IIFE, AMD,UMD, CJS, ES6
+    recommended: CJS, ES6(most because of its fail fast feature)
+- Bundlers: Require.JS(not used), browserify, webpack(recommended), rollup, jspm
