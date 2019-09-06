@@ -211,3 +211,28 @@ For Deployment : Heroku
   - regexp.js
 3. Serve Data via API
   - JSON Server
+
+## Project Structure: Demo App
+- directory structure and file naming
+- framework usuage
+- testing
+- mock api
+- automated deployment
+- codifies decisions
+### Tips
+- Put JS in .js file not in HTML script tag
+- consider organizing by feature rather than by type
+    of file (like in MVC)
+- extract logic into POJO's
+
+## Production Build
+- Minification : for quick loading and save bandwidth
+    removes comments, removes whitespace and new lines
+    dead code elimination / tree-shaking, debug via sourcemap
+- SourceMaps : support debugging
+- Dynamic HTML : for production specific concerns
+- Cache Busting : ensure client receive latest version of code upon 
+    deployment
+- Bundle Splitting : don't have to download entire app when just 
+    part of it changes
+- Error Logging : to log bugs in production
