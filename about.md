@@ -6,9 +6,9 @@ Development Webserver : express
 Automation : npm scripts
 Transpiling : babel
 Bundling : webpack
-Linting
+Linting : ESLint
 HTTP
-Testing and CI
+Testing and CI : mocha, chai.js, JSDOM
 Project Structure
 Production Build
 Automated Deployment
@@ -129,4 +129,35 @@ For Deployment : Heroku
     use Babel-ESLint for using various Expermental features in Stages-X
 - Linting via automated build process helps to check and universally
     configure, easy to peer program
-- 
+
+## Automated Testing
+- various tests: unit, integration, UI
+### Testing Framework : Mocha
+- mocha, jasmine, tape, Qunit, AVA, Jest
+### Assertion Library : Chai
+- chai, should.js, expect
+### Helper Libraries : JSDOM
+- JSDOM : simulate browser's DOM, run DOM-related tests
+    without a browser
+- Cheerio: jQuery for the server, query virtual DOM using
+    jQuery selectors
+### Where to run tests? : Node
+- Browser -- Karma, Testem
+- Headless Browser -- PhantomJS
+- In-memory DOM -- JSDOM
+### Where to place test files? : Alongside
+- centralized to tests directory
+- alongside to src files => easy imports, lower friction testing, 
+    convenient to open, no recreating folder structure,
+    clear visibility, easy to move files
+### When to run test: When we hit save(for unit tests):
+- rapid feedback 
+- facilitates Test-driven development
+- automatic = low friction
+- increases test visibility
+### Unit vs Integration
+- test a small unit | test multiple units
+- often single function | involves clicking and waiting
+- fast | slow
+- run upon save | run on demance since requires external resources
+
