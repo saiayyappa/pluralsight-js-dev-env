@@ -8,7 +8,7 @@ Transpiling : babel
 Bundling : webpack
 Linting : ESLint
 HTTP
-Testing and CI : mocha, chai.js, JSDOM
+Testing and CI : mocha, chai.js, JSDOM, travis, appveyor
 Project Structure
 Production Build
 Automated Deployment
@@ -160,4 +160,19 @@ For Deployment : Heroku
 - often single function | involves clicking and waiting
 - fast | slow
 - run upon save | run on demance since requires external resources
-
+### Why CI?
+- Forgot to commit new file
+- Forgot to update package.json
+- Commit doesn't run cross-platform
+- node version conflicts
+- bad merge
+- didn't run tests 
+- catch mistakes quickly
+### Purpose of CI
+- run automated build and check which commit has broke the build
+- run tests
+- check code coverage
+- automate deployment
+### CI
+- travis(linux-based), appveyor(windows-based), jenkins, circleCI,
+    Semaphore, snapCI
