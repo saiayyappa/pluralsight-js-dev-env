@@ -99,3 +99,34 @@ For Deployment : Heroku
 - types of modules: IIFE, AMD,UMD, CJS, ES6
     recommended: CJS, ES6(most because of its fail fast feature)
 - Bundlers: Require.JS(not used), browserify, webpack(recommended), rollup, jspm
+- Dev can debug transpiled and bundled code using source maps of 
+    transpiled version
+- Source maps are downloaded only when developer tools is open because
+    to save bandwidth
+
+## Linting
+- Catch error at compile time, enforces consistency, avoid mistakes
+- JSLine, JSHint, ESLint(de facto)
+- for configuring ESLint using package.json
+```javascript
+  {
+    "name": "mypackage",
+    "version": "0.0.1",
+    "eslintConfig": {
+      "plugins": ["example"],
+      "env": {
+        "example/custom": true
+      }
+    }
+  }
+  ```
+- many plugins such as eslist-plugin-angular, eslint-plugin-node
+- check this https://github.com/dustinspecker/awesome-eslint
+- presents - from scratch, recommened by ESLint, airbnb, standard JS, XO
+- use eslint-loader (to lint whenever we save) / use elsint-watch a
+    node package for better warning and error formatting
+- ESLint doesn't support most of the experimental features, for that
+    use Babel-ESLint for using various Expermental features in Stages-X
+- Linting via automated build process helps to check and universally
+    configure, easy to peer program
+- 
