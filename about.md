@@ -7,7 +7,7 @@ Automation : npm scripts
 Transpiling : babel
 Bundling : webpack
 Linting : ESLint
-HTTP
+HTTP : fetch
 Testing and CI : mocha, chai.js, JSDOM, travis, appveyor
 Project Structure
 Production Build
@@ -176,3 +176,38 @@ For Deployment : Heroku
 ### CI
 - travis(linux-based), appveyor(windows-based), jenkins, circleCI,
     Semaphore, snapCI
+
+## HTTP Mock API
+- Call approaches: http, request, XHR, jQuery, framework-based, 
+    fetch, isomorphic-fetch, xhr, SuperAgent, Axios
+- recommended: request(if you use only node),
+    Fetch(if you need for support only in browser)
+    SuperAgent, Axios(if app renders on both client and server)
+- always centralize API
+- Advantages of Mock API: unit testing, instant response, 
+    keep working when services are down, rapid prototyping,
+    avoid inter-team bottlenecks, work offline
+    eg. Nock, static JSON, api-mock, JSON server, JSON schema faker
+      browsersync, express
+- with static JSON app loads same data everytime, so changing data
+    doesn't reflect upon reload
+- JSON server creates fake db and simulates real db and supports
+    CRUD(overcomes disAdv of static JSON). Get a full fake REST API
+    with zero coding in less than 30 seconds (seriously).
+- JSON schema maker creates different fake data every time you start
+    app. Its used along with JSON server. This allows to catch edge
+    cases in design such as pagination, overflow, sorting and 
+    formatting
+- Express is more dynamic where we can set real db filled with mock
+    data. But services have to be written to fetch data from db. If
+    separate service is writing services its better to move on to
+    JSON server. If service layer is already completed use Express.
+### Mocking HTTP API
+1. Declare schema
+  - JSON schema faker
+2. Generate Random Data
+  - faker.js
+  - change.js
+  - regexp.js
+3. Serve Data via API
+  - JSON Server
